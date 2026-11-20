@@ -1,0 +1,94 @@
+:root {
+  /* Warm Storybook Academy Palette — WCAG AA Verified */
+  --cv-bg: #FBF8F3;
+  --cv-surface: #FFFFFF;
+  --cv-surface-soft: #EEF5F7;
+  --cv-text: #1E293B;
+  --cv-muted: #526071;
+  --cv-primary: #2B6CB0;
+  --cv-primary-hover: #215793;
+  --cv-on-primary: #FFFFFF;
+  --cv-accent-honey: #E69F3E;
+  --cv-on-honey: #1E293B;
+  --cv-accent-sage: #2F855A;
+  --cv-on-sage: #FFFFFF;
+  --cv-accent-coral: #D96B52;
+  --cv-coral-soft: #FDF0ED;
+  --cv-border: #D8E1E8;
+  --cv-border-input: #94A3B8;
+
+  /* Geometry & Motion */
+  --cv-card-radius: 18px;
+  --cv-card-pad: 24px;
+  --cv-shadow-soft: 0 4px 18px rgba(30, 41, 59, 0.06), 0 1px 4px rgba(30, 41, 59, 0.04);
+  --cv-shadow-lift: 0 10px 28px rgba(30, 41, 59, 0.1), 0 2px 8px rgba(30, 41, 59, 0.05);
+  --cv-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  /* Abbasid Lapis & Sandstone Palette (Scoped to Embedded 3D Exhibit & Media Modals) */
+  --cv-lapis: #0C182E;
+  --cv-lapis-surface: #162B4D;
+  --cv-lapis-deep: #071020;
+  --cv-sandstone: #D8AE66;
+  --cv-sandstone-bright: #E8C988;
+  --cv-turquoise: #3A9BA8;
+  --cv-parchment: #F7F1E1;
+  --cv-parchment-muted: #C5D1DE;
+}
+
+.cv-lapis-theme {
+  background-color: var(--cv-lapis);
+  color: var(--cv-parchment);
+  --cv-exhibit-border: rgba(216, 174, 102, 0.42);
+}
+
+.cv-card {
+  background-color: var(--cv-surface);
+  border: 1px solid var(--cv-border);
+  border-radius: var(--cv-card-radius);
+  padding: var(--cv-card-pad);
+  box-shadow: var(--cv-shadow-soft);
+}
+
+.cv-card-soft {
+  background-color: var(--cv-surface-soft);
+  border: 1px solid var(--cv-border);
+  border-radius: var(--cv-card-radius);
+  padding: var(--cv-card-pad);
+}
+
+/* Logical Spacing Helpers */
+.cv-ps-4 {
+  padding-inline-start: 1rem;
+}
+.cv-pe-4 {
+  padding-inline-end: 1rem;
+}
+.cv-ms-auto {
+  margin-inline-start: auto;
+}
+
+/* Print-ready Study Sheet CSS */
+@media print {
+  header,
+  nav,
+  footer,
+  .cv-no-print {
+    display: none !important;
+  }
+
+  html,
+  body,
+  #root {
+    background: #FFFFFF !important;
+    color: #1E293B !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .cv-card,
+  .cv-card-soft {
+    box-shadow: none !important;
+    border: 1px solid #94A3B8 !important;
+    break-inside: avoid;
+  }
+}

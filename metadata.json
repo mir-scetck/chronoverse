@@ -1,0 +1,6 @@
+{
+  "name": "CHRONOVERSE — Baghdad c. 800 CE",
+  "description": "Walk through historical Baghdad c. 800 CE, explore the Abbasid palace district, speak with Harun al-Rashid in Modern Standard Arabic by voice or text, and witness cinematic historical stories.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
